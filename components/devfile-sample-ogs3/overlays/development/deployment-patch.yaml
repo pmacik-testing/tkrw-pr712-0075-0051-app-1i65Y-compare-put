@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ogs3
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0051-tenant/tkrw-pr712-0075-0051-app/devfile-sample-ogs3@sha256:67457365986985f559d6cd1093d4199ba4a2a39cfc40fab00c23f0224a880393
+        name: my-nodejs
+        resources: {}
+status: {}
